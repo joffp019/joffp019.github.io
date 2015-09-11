@@ -1,0 +1,17 @@
+body {
+    background-color: #489443;
+}
+
+h4 {
+    color: red;
+    font-family: Futura, sans-serif; 
+}
+
+p {
+    color: red;
+    font-family: Questa, sans-serif; 
+}
+
+.middle {
+    background-color: green;
+}
