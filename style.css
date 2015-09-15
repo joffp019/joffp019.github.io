@@ -1,19 +1,21 @@
 body {
-    background-color: #489443;
+    background-color: #3B9AA3;
+    padding: 30px;
 }
 
 h4 {
-    color: red;
+    color: #456789;
     font-family: Futura, sans-serif; 
 }
 
+a {
+    color: #347048;
+}
+
 p {
-    color: red;
+    color: #456789;
     font-family: Questa, sans-serif; 
-    height: 30px;
+    
     
 }
 
-.middle {
-    background-color: green;
-}
