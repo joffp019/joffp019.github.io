@@ -1,0 +1,49 @@
+body {
+    background-color: #021728;
+    font-family: copse, serif;
+    color: #073ead;
+    text-align: center;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wave {
+    color: #0b8dfc;
+    font-size: 16px;
+}
+
+.rain {
+    color: #033351;
+    font-size: 30px;
+}
+
+.first {
+    color: #000000;
+    font-size:15px;
+    text-align: left;
+}
+
+.second {
+    color: #31555a;
+    font-size: 30px;
+}
+
+h5 {
+    color: #164556;
+    font-size: 36px;
+}
+
+.third {
+    font-size: 30px;
+    color: #2b7ca6;
+}
+
+footer {
+    text-align: left;
+    font-family: Sinkin Sans, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+}
