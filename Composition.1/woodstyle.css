@@ -3,6 +3,12 @@ body {
     font-family: Bitter, bold, slab-serif;
     font-size: 20px;
     color: #347048; 
-    circle(100px at 30% 50%);
 }
+circle();
 
+footer {
+    text-align: left;
+    font-family: Sinkin Sans, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+}
