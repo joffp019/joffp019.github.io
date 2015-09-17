@@ -1,0 +1,8 @@
+body {
+    background-color: #3B9AA3;
+    font-family: Bitter, bold, slab-serif;
+    font-size: 20px;
+    color: #347048; 
+    circle(100px at 30% 50%);
+}
+

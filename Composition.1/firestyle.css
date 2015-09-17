@@ -1,0 +1,32 @@
+body {
+    background-image: linear-gradient(to left top, #E82323, #EC3A1F, #F0511C, #F36918, #F78014, #FB9711, #FFAE0D);
+    background: circle();
+    font-family: Aller Display, sans-serif; 
+}
+
+p {
+    color: #CC1E00;
+    padding: 10px;
+    
+}
+
+h1 {
+    font-family: Alfa Slab One, slab;
+    padding: 0;
+}
+
+.base {
+    padding: 20px;
+}
+
+mark {
+    color: #EC7F53;
+}
+
+footer {
+    text-align: left;
+    font-family: Sinkin Sans, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    padding: 0;
+}
