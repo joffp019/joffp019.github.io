@@ -1,0 +1,16 @@
+body {
+    background-color: #a4acb1;
+    font-family: Sinkin Sans, sans-serif;
+    margin: 0;
+    
+}
+.sidewalk1 {
+    background-color: #dadad9;
+    font-family: Museo Slab, serif;
+    font-size: 24pt;
+    color: #868686;
+    padding: 40px 0;
+    text-align: center;
+    white-space: nowrap;
+    transform: rotate(180deg);
+}
