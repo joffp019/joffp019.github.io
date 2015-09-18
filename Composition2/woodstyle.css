@@ -1,0 +1,29 @@
+body {
+    background-color: #3B9AA3;
+    font-family: Bitter, bold, slab-serif;
+    font-size: 18px;
+    color: #3B9AA3; 
+    width: auto;
+    margin: 30px;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 1050px;
+	height: 1050px; 
+	/* width and height can be anything, as long as they're equal */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+    background-color: #6FE4F0;
+    opacity: 0.4;
+}
+
+footer {
+    text-align: left;
+    font-family: Sinkin Sans, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+}
