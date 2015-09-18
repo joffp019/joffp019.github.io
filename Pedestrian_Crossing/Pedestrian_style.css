@@ -1,0 +1,48 @@
+body {
+    background-color: #a4acb1;
+    font-family: Sinkin Sans, sans serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 1200px;
+}
+
+p {
+    text-align: center;
+    color: #66AA66;
+    font-size: 12pt;
+    background-color: #ffffff;
+    padding: 24px 0 24px 0;
+    margin: 100px 0 100px 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidewalk1 {
+    background-color: #dadad9;
+    font-family: Museo Slab, serif;
+    font-size: 24pt;
+    color: #868686;
+    position: static;
+    padding: 90px 200px 90px 200px;
+    margin-top: 0;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidewalk2 {
+    background-color: #dadad9;
+    font-family: Museo Slab, serif;
+    font-size: 24pt;
+    color: #868686;
+    padding: 90px 200px 90px 200px;
+    margin-bottom: 0;
+    width: 500px;
+    
+}
+
+
+
