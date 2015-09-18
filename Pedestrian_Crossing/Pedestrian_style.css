@@ -13,11 +13,19 @@ p {
     color: #66AA66;
     font-size: 12pt;
     background-color: #ffffff;
-    padding: 24px 0 24px 0;
-    margin: 100px 0 100px 0;
+    padding: 24px 0;
+    margin: 100px 0;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.timer {
+    width: 1200px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+    background-color: #66AA66;
 }
 
 .sidewalk1 {
@@ -26,7 +34,7 @@ p {
     font-size: 24pt;
     color: #868686;
     position: static;
-    padding: 90px 200px 90px 200px;
+    padding: 90px 200px;
     margin-top: 0;
     width: 500px;
     margin-left: auto;
@@ -38,7 +46,7 @@ p {
     font-family: Museo Slab, serif;
     font-size: 24pt;
     color: #868686;
-    padding: 90px 200px 90px 200px;
+    padding: 90px 200px;
     margin-bottom: 0;
     width: 500px;
     
