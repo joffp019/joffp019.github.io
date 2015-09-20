@@ -4,11 +4,18 @@ body {
     margin: 0;
 }
 
+img {
+    position: fixed;
+    left: 70px;
+    top: 20px;
+}
+
 .city,
 .people,
 .road {
     text-align: center;
     color: #66AA66;
+    opacity: 0.5;
     font-size: 12pt;
     background-color: #ffffff;
     padding: 24px 0;
@@ -18,11 +25,60 @@ body {
     margin-right: auto;
 }
 
+.road:hover {
+    color: #247424;
+    font-size: 12pt;
+    opacity: 1;
+    width: 1000px;
+}
+
+.city:hover {
+    color: #247424;
+    font-size: 12pt;
+    opacity: 1;
+    width: 1000px;
+}
+
+.people:hover {
+    color: #247424;
+    font-size: 12pt;
+    opacity: 1;
+    width: 1000px;
+}
+
+@keyframes timer {
+    0% {
+        height: 10px;
+        width: 1000px;
+        background-color: #66AA66;
+    }
+    49% {
+        height: 10px;
+        width: 1px;
+        background-color: #66AA66;
+    }
+    50% {
+        height: 10px;
+        width: 1000px;
+        background-color: #D47F7F;
+    }
+    99% {
+        height: 10px;
+        width: 1px;
+        background-color: #D47F7F;
+    }
+    100% {
+        height: 10px;
+        width: 1000px;
+        background-color: #66AA66;
+    }
+}
+
 .timer {
-    height: 10px;
-    width: 2000px;
     position: fixed;
-    background-color: #66AA66;
+    top: 45;
+    left: 175;
+    animation: timer 90s linear infinite;
 }
 
 .sidewalk1 {
@@ -30,7 +86,7 @@ body {
     font-family: Museo Slab, serif;
     font-size: 24pt;
     color: #868686;
-    padding: 100px 0;
+    padding: 150px 0;
     text-align: center;
     white-space: nowrap;
 }
@@ -44,6 +100,7 @@ body {
     text-align: center;
     white-space: nowrap;
     transform: rotate(180deg);
+    margin-bottom:0;
 }
 
 
