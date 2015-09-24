@@ -4,6 +4,41 @@ body {
     margin: 0;
 }
 
+@keyframes timer {
+    0% {
+        height: 10px;
+        width: 1000px;
+        background-color: #66AA66;
+    }
+    49% {
+        height: 10px;
+        width: 1px;
+        background-color: #66AA66;
+    }
+    50% {
+        height: 10px;
+        width: 1000px;
+        background-color: #D47F7F;
+    }
+    99% {
+        height: 10px;
+        width: 1px;
+        background-color: #D47F7F;
+    }
+    100% {
+        height: 10px;
+        width: 1000px;
+        background-color: #66AA66;
+    }
+}
+
+.timer {
+    position: fixed;
+    top: 45;
+    left: 175;
+    animation: timer 90s linear infinite;
+}
+
 @keyframes signal {
     0% {
         background-image: url("Signals-cross.png");
@@ -39,14 +74,13 @@ body {
     }
 }
     
-
 .signal {
     width: 60px;
     height: 60px;
     position: fixed;
     left: 70px;
     top: 20px;
-    animation: signal 10s infinite;
+    animation: signal 90s infinite;
     transition-duration: 0;
 }
 
@@ -60,7 +94,7 @@ body {
     background-color: #ffffff;
     padding: 24px 0;
     margin: 100px 0;
-    width: 800px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -69,56 +103,21 @@ body {
     color: #247424;
     font-size: 12pt;
     opacity: 1;
-    width: 1000px;
 }
 
 .city:hover {
     color: #247424;
     font-size: 12pt;
     opacity: 1;
-    width: 1000px;
 }
 
 .people:hover {
     color: #247424;
     font-size: 12pt;
     opacity: 1;
-    width: 1000px;
 }
 
-@keyframes timer {
-    0% {
-        height: 10px;
-        width: 1000px;
-        background-color: #66AA66;
-    }
-    49% {
-        height: 10px;
-        width: 1px;
-        background-color: #66AA66;
-    }
-    50% {
-        height: 10px;
-        width: 1000px;
-        background-color: #D47F7F;
-    }
-    99% {
-        height: 10px;
-        width: 1px;
-        background-color: #D47F7F;
-    }
-    100% {
-        height: 10px;
-        width: 1000px;
-        background-color: #66AA66;
-    }
-}
-
-.timer {
-    position: fixed;
-    top: 45;
-    left: 175;
-    animation: timer 10s linear infinite;
+.people:active {
 }
 
 .sidewalk1 {
@@ -129,6 +128,7 @@ body {
     padding: 150px 0;
     text-align: center;
     white-space: nowrap;
+    
 }
 
 .sidewalk2 {
@@ -143,6 +143,13 @@ body {
     margin-bottom:0;
 }
 
+:link {
+    color: #868686;
+}
+
+:visited {
+    color: #868686;
+}
 
 
 
