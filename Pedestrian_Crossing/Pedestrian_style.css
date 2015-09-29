@@ -4,18 +4,55 @@ body {
     margin: 0;
 }
 
+img {
+    width: 1200px;
+    margin: 30px auto;
+    display: block;
+}
+
+.citywrapper {
+    display: block;
+    margin: auto;
+    font-size: 0;
+}
+
+.peoplewrapper {
+    display: block;
+    margin: auto;
+    font-size: 0;
+    margin-top: 30px;
+}
+
+.cityphoto {
+    width: 260px;
+    height: auto;
+    margin: 50px 0;
+    display: inline-block;
+}
+
+.peoplephoto {
+    width: 300px;
+    height: auto;
+    margin: 40px 20px;
+    display: inline-block;
+}
+
+.down {
+    transform: rotate(180deg);
+}
+
 @keyframes timer {
     0% {
         height: 10px;
         width: 1000px;
         background-color: #66AA66;
     }
-    49% {
+    69% {
         height: 10px;
         width: 1px;
         background-color: #66AA66;
     }
-    50% {
+    70% {
         height: 10px;
         width: 1000px;
         background-color: #D47F7F;
@@ -45,27 +82,27 @@ body {
         background-image: url("Signals-cross.png");
         animation-timing-function: step-end;
     }
-    40% {
+    60% {
         background-image: url("Signals-5.png");
         animation-timing-function: step-end;
     }
-    42% {
+    62% {
         background-image: url("Signals-4.png");
         animation-timing-function: step-end;
     }
-    44% {
+    64% {
         background-image: url("Signals-3.png");
         animation-timing-function: step-end;
     }
-    46% {
+    66% {
         background-image: url("Signals-2.png");
         animation-timing-function: step-end;
     }
-    48% {
+    68% {
         background-image: url("Signals-1.png");
         animation-timing-function: step-end;
     }
-    50% {
+    70% {
         background-image: url("Signals-stop.png");
         animation-timing-function: step-end;
     }
@@ -91,32 +128,44 @@ body {
     opacity: 0.5;
     font-size: 12pt;
     background-color: #ffffff;
-    padding: 24px 0;
+    padding: 20px 0;
     margin: 100px 0;
     width: 700px;
+    height: 20px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.stripe:hover {
+    color: #247424;
+    font-size: 12pt;
+    opacity: 1;
 }
 
 .road:hover {
-    color: #247424;
-    font-size: 12pt;
-    opacity: 1;
+    margin:20px auto;
+    display: block;
+    top: 50px;
+    height: 800px;
+    width: 1200px;
 }
 
 .city:hover {
-    color: #247424;
-    font-size: 12pt;
-    opacity: 1;
+    margin:20px auto;
+    display: block;
+    top: 50px;
+    height: 300px;
+    width: 1200px;
 }
 
 .people:hover {
-    color: #247424;
-    font-size: 12pt;
-    opacity: 1;
-}
-
-.people:active {
+    margin: 20px auto;
+    display: block;
+    top: 50px;
+    height: 650px;
+    width: 800;
 }
 
 .sidewalk1 {
@@ -127,7 +176,6 @@ body {
     padding: 150px 0;
     text-align: center;
     white-space: nowrap;
-    
 }
 
 .sidewalk2 {
@@ -135,7 +183,7 @@ body {
     font-family: Museo Slab, serif;
     font-size: 24pt;
     color: #868686;
-    padding: 100px 0;
+    padding: 150px 0;
     text-align: center;
     white-space: nowrap;
     transform: rotate(180deg);
