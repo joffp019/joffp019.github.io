@@ -5,25 +5,61 @@ body {
     padding: 0;
 }
 
-div {
-    display: inline-block;
+
+@keyframes timer {
+    0% {
+        height: 10px;
+        width: 100%;
+        background-color: #0f0;
+    }
+    69% {
+        width: 0%;
+        background-color: #0f0;
+    }
+    70% {
+        width: 100%;
+        background-color: #f00;
+    }
+    99% {
+        width: 0%;
+        background-color: #f00;
+    }
+    100% {
+        width: 100%;
+        background-color: #0f0;
+    }
+}
+
+.timer {
+    height: 10px;
+    margin: 0;
+    top: 50%;
+    animation: timer 10s linear infinite;
+    display: block;
+    position: fixed;
+    transform: translateY(-50%);
 }
 
 .bigwrapper {
-    font-size:0;
-    height: 1000px;
+    font-size: 0;
     width: 100%;
+    z-index: 1;
+}
+
+.wrapperleft {
+    display: inline-block;
 }
 
 .stripe {
     font-size: 12pt;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     padding: 0;
     margin: 0;
     width: 50%;
     height: 100%;
     display: inline-block;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 @keyframes pedestrian {
@@ -77,17 +113,18 @@ img {
 }
 
 .medium {
-    width: 300px;
-    margin: 10px;
+    width: 350px;
+    margin: 20px;
 }
 
 .small {
-    width: 30%;
-    margin: 20px;
+    width: 200px;
+    margin: 10px;
 }
 
 .center {
     text-align: center;
+    
 }
 
 .right {
@@ -96,62 +133,29 @@ img {
 
 @keyframes cars {
     0% {
-        display: none;
+        z-index: -1;
     }
     70% {
-        display: block;
         z-index: 2;
     }
     100% {
-        display: none;
+        z-index: -1;
     }
 }
 
 .wrapper_cars {
-    display: none;
-    animation: cars 10s linear infinite;
+    animation: cars 10s infinite;
     width: 100%;
     height: 100%;
+    position: fixed;
+    z-index: 2;
 }
 
 .cars {
     display: inline-block;
-    width: 200px;
+    width: 350px;
 }
 
-@keyframes timer {
-    0% {
-        height: 10px;
-        width: 100%;
-        background-color: #0f0;
-    }
-    69% {
-        width: 0%;
-        background-color: #0f0;
-    }
-    70% {
-        width: 100%;
-        background-color: #f00;
-    }
-    99% {
-        width: 0%;
-        background-color: #f00;
-    }
-    100% {
-        width: 100%;
-        background-color: #0f0;
-    }
-}
-
-.timer {
-    height: 10px;
-    margin: 0;
-    top: 50%;
-    animation: timer 10s linear infinite;
-    display: block;
-    position: fixed;
-    transform: translateY(-50%);
-}
 
 
 

@@ -1,13 +1,19 @@
 body {
     background-color: #3B9AA3;
-    padding: 30px;
-    width: 400px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
+h1 {
+    color: #456789;
+    font-family: Futura, sans-serif; 
+    text-align: center;
+}
+
 h4 {
     color: #456789;
+    margin: 20px;
     font-family: Futura, sans-serif; 
     text-align: center;
 }
@@ -20,11 +26,27 @@ a {
 
 p {
     color: #456789;
-    font-family: Questa, sans-serif; 
+    font-family: Questa, sans-serif;
+    margin: 10px;
 }
 
-.left {
-    text-align: left;
+.mercury {
+    color: #0ff;
+}
+
+.wrapper {
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    height: 85px;
+    overflow: scroll;
+    transition: 1s linear;
+    margin: 5px 0;
+}
+
+.wrapper:hover {
+    height: 500px;
+    padding-bottom: 20px;
 }
 
 .right {
