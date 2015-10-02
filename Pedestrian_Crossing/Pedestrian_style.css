@@ -1,202 +1,159 @@
 body {
-    background-color: #a4acb1;
-    font-family: Sinkin Sans, sans-serif;
+    background-color: #fff;
+    font-family: Fira-sans, sans-serif;
     margin: 0;
+    padding: 0;
+}
+
+div {
+    display: inline-block;
+}
+
+.bigwrapper {
+    font-size:0;
+    height: 1000px;
+    width: 100%;
+}
+
+.stripe {
+    font-size: 12pt;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    overflow: scroll;
+}
+
+@keyframes pedestrian {
+    0% {
+        left: 100%;
+        color: #0f0;
+    }
+    
+    69% {
+        left: 0%;
+        color: #0f0;
+    }
+    
+    70% {
+        left: 100%;
+        color: #f00;
+    }
+    
+    99% {
+        left: 0%;
+        color: #f00;
+    }
+    
+    100% {
+        left: 100%;
+        color: #0f0;
+    }
+}
+
+h1 {
+    text-align: center;
+    width: 100px;
+    color: #ffffff;
+    font-size: 20px;
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    animation: pedestrian 10s infinite linear;
 }
 
 img {
-    width: 1200px;
-    margin: 30px auto;
-    display: block;
-}
-
-.citywrapper {
-    display: block;
-    margin: auto;
-    font-size: 0;
-}
-
-.peoplewrapper {
-    display: block;
-    margin: auto;
-    font-size: 0;
-    margin-top: 30px;
-}
-
-.cityphoto {
-    width: 260px;
+    margin: 0;
     height: auto;
-    margin: 50px 0;
-    display: inline-block;
 }
 
-.peoplephoto {
+.big {
+    width: 95%;
+    margin: 10px 40px;
+}
+
+.medium {
     width: 300px;
-    height: auto;
-    margin: 40px 20px;
-    display: inline-block;
+    margin: 10px;
 }
 
-.down {
-    transform: rotate(180deg);
+.small {
+    width: 30%;
+    margin: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+@keyframes cars {
+    0% {
+        display: none;
+    }
+    70% {
+        display: block;
+        z-index: 2;
+    }
+    100% {
+        display: none;
+    }
+}
+
+.wrapper_cars {
+    display: none;
+    animation: cars 10s linear infinite;
+    width: 100%;
+    height: 100%;
+}
+
+.cars {
+    display: inline-block;
+    width: 200px;
 }
 
 @keyframes timer {
     0% {
         height: 10px;
-        width: 1000px;
-        background-color: #66AA66;
+        width: 100%;
+        background-color: #0f0;
     }
     69% {
-        height: 10px;
-        width: 1px;
-        background-color: #66AA66;
+        width: 0%;
+        background-color: #0f0;
     }
     70% {
-        height: 10px;
-        width: 1000px;
-        background-color: #D47F7F;
+        width: 100%;
+        background-color: #f00;
     }
     99% {
-        height: 10px;
-        width: 1px;
-        background-color: #D47F7F;
+        width: 0%;
+        background-color: #f00;
     }
     100% {
-        height: 10px;
-        width: 1000px;
-        background-color: #66AA66;
+        width: 100%;
+        background-color: #0f0;
     }
 }
 
 .timer {
+    height: 10px;
+    margin: 0;
+    top: 50%;
+    animation: timer 10s linear infinite;
+    display: block;
     position: fixed;
-    top: 45;
-    left: 175;
-    animation: timer 90s linear infinite;
-    z-index: 1;
+    transform: translateY(-50%);
 }
 
-@keyframes signal {
-    0% {
-        background-image: url("Signals-cross.png");
-        animation-timing-function: step-end;
-    }
-    60% {
-        background-image: url("Signals-5.png");
-        animation-timing-function: step-end;
-    }
-    62% {
-        background-image: url("Signals-4.png");
-        animation-timing-function: step-end;
-    }
-    64% {
-        background-image: url("Signals-3.png");
-        animation-timing-function: step-end;
-    }
-    66% {
-        background-image: url("Signals-2.png");
-        animation-timing-function: step-end;
-    }
-    68% {
-        background-image: url("Signals-1.png");
-        animation-timing-function: step-end;
-    }
-    70% {
-        background-image: url("Signals-stop.png");
-        animation-timing-function: step-end;
-    }
-    100% {
-        background-image: url("Signals-cross.png");
-        animation-timing-function: step-end;
-    }
-}
-    
-.signal {
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    left: 70px;
-    top: 20px;
-    animation: signal 90s infinite;
-    transition-duration: 0;
-}
 
-.stripe {
-    text-align: center;
-    color: #66AA66;
-    opacity: 0.5;
-    font-size: 12pt;
-    background-color: #ffffff;
-    padding: 20px 0;
-    margin: 100px 0;
-    width: 700px;
-    height: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    transition: 1s;
-}
-
-.stripe:hover {
-    color: #247424;
-    font-size: 12pt;
-    opacity: 1;
-}
-
-.road:hover {
-    margin:20px auto;
-    display: block;
-    top: 50px;
-    height: 800px;
-    width: 1200px;
-}
-
-.city:hover {
-    margin:20px auto;
-    display: block;
-    top: 50px;
-    height: 300px;
-    width: 1200px;
-}
-
-.people:hover {
-    margin: 20px auto;
-    display: block;
-    top: 50px;
-    height: 650px;
-    width: 800;
-}
-
-.sidewalk1 {
-    background-color: #dadad9;
-    font-family: Museo Slab, serif;
-    font-size: 24pt;
-    color: #868686;
-    padding: 150px 0;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.sidewalk2 {
-    background-color: #dadad9;
-    font-family: Museo Slab, serif;
-    font-size: 24pt;
-    color: #868686;
-    padding: 150px 0;
-    text-align: center;
-    white-space: nowrap;
-    transform: rotate(180deg);
-    margin-bottom:0;
-}
-
-:link {
-    color: #868686;
-}
-
-:visited {
-    color: #868686;
-}
 
 
 
