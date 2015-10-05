@@ -143,18 +143,49 @@ img {
     animation: traffic 10s linear infinite;
     position: fixed;
     opacity: 0;
-
+    padding: 70px 0;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
     margin: auto 0;
     text-align: center;
     pointer-events: none;
+    z-index: 90;
+}
+
+@keyframes back {
+    0% {
+    opacity: 0;
+    }
+    69.9% {
+    opacity: 0;   
+    }
+    70% {
+    opacity: 0.6;
+    }
+    99.9% {
+    opacity: 0.6;
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+.background {
+    animation: back 10s linear infinite;
+    background-color: #979696;
+    opacity: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    pointer-events: none;
 }
 
 .cars {
-    width: 230px;
     margin: 20px 10px;
+    width: 230px;
 }
 
 
