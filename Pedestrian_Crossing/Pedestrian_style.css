@@ -32,7 +32,7 @@ body {
     height: 10px;
     margin: 0;
     top: 50%;
-    animation: timer 10s linear infinite;
+    animation: timer 30s linear infinite;
     display: block;
     position: fixed;
     transform: translateY(-50%);
@@ -99,7 +99,7 @@ h1 {
     position: fixed;
     transform: translateY(-50%);
     transform: translateX(-50%);
-    animation: title 10s infinite linear;
+    animation: title 30s infinite linear;
     z-index: 100;
 }
 
@@ -117,9 +117,9 @@ img {
     text-align: right;
 }
 
-.left {
-    text-align: left;
-}    
+.rotate {
+    transform: rotate(180deg);
+}
 
 @keyframes traffic {
     0% {
@@ -140,7 +140,7 @@ img {
 }
 
 .traffic {
-    animation: traffic 10s linear infinite;
+    animation: traffic 30s linear infinite;
     position: fixed;
     opacity: 0;
     padding: 70px 0;
@@ -174,8 +174,8 @@ img {
 }
 
 .background {
-    animation: back 10s linear infinite;
-    background-color: #979696;
+    animation: back 30s linear infinite;
+    background-color: white;
     opacity: 0;
     top: 0;
     height: 100%;
