@@ -121,6 +121,16 @@ img {
     transform: rotate(180deg);
 }
 
+.blank {
+    height: 200px;
+    display: block;
+}
+
+.line {
+    height: 50px;
+    display: block;
+}
+
 @keyframes traffic {
     0% {
     opacity: 0;
@@ -144,6 +154,7 @@ img {
     position: fixed;
     opacity: 0;
     padding: 70px 0;
+    width: 100%;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -151,6 +162,40 @@ img {
     text-align: center;
     pointer-events: none;
     z-index: 90;
+}
+
+.cars {
+    width: 230px;
+    display: inline-block;
+    margin: 0;
+}
+
+.upper {
+    top:0;
+    display: inline-block;
+    width: 100%;
+}
+
+.bottom {
+    top: 50%;
+    display: inline-block;
+    width: 100%;
+}
+
+.up {
+    transform: translate(0, 50px);
+}
+
+.down {
+    transform: translate(0, -50px);
+}
+
+.left {
+    transform: translate(50px);
+}
+
+.right {
+    transform: translate(-50px);
 }
 
 @keyframes back {
@@ -161,11 +206,11 @@ img {
     opacity: 0;   
     }
     70% {
-    opacity: 0.6;
+    opacity: 0.75;
     pointer-events: auto;
     }
     99.9% {
-    opacity: 0.6;
+    opacity: 0.75;
     pointer-events: auto;
     }
     100% {
@@ -185,10 +230,6 @@ img {
     pointer-events: none;
 }
 
-.cars {
-    margin: 20px 10px;
-    width: 230px;
-}
 
 
 
