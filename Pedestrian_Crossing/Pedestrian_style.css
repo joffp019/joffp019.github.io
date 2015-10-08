@@ -190,11 +190,11 @@ img {
     transform: translate(0, -50px);
 }
 
-.left {
+.leftcar {
     transform: translate(50px);
 }
 
-.right {
+.rightcar {
     transform: translate(-50px);
 }
 
