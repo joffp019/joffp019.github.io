@@ -153,8 +153,9 @@ img {
     animation: traffic 30s linear infinite;
     position: fixed;
     opacity: 0;
-    padding: 70px 0;
+    padding: 0;
     width: 100%;
+    height: 100%;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -171,31 +172,39 @@ img {
 }
 
 .upper {
-    top:0;
+    top: 0;
     display: inline-block;
-    width: 100%;
+    position: fixed;
+    width: 90%;
+    left: 0;
 }
 
 .bottom {
-    top: 50%;
+    bottom: 0;
     display: inline-block;
-    width: 100%;
+    position: fixed;
+    width: 90%;
+    right: 0;
 }
 
 .up {
-    transform: translate(0, 50px);
+    transform: translate(0, 20px);
 }
 
 .down {
-    transform: translate(0, -50px);
+    transform: translate(0, -20px);
 }
 
 .leftcar {
-    transform: translate(50px);
+    transform: translate(20px);
 }
 
 .rightcar {
-    transform: translate(-50px);
+    transform: translate(-20px);
+}
+
+.car {
+    margin: 10px;
 }
 
 @keyframes back {
