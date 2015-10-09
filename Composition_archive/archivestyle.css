@@ -1,19 +1,20 @@
 div {
     margin: 30px auto;
     padding: 30px;
-    width: 250px;
+    height: 45px;
+    width: 360px;
     text-align: center;
     border-top: solid #909090;
     border-width: 2px;
     display:block;
-    height: 45px;
     overflow: hidden;
-    transition: 1s ease-in;
+    overflow-x: hidden;
+    transition: 2s ease-in;
 }
 
 div:hover {
     height: 400px;
-    width: 500px;
+    width: 800px;
 }
 
 p {
