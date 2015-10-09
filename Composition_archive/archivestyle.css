@@ -1,18 +1,19 @@
 div {
     margin: 30px auto;
     padding: 30px;
-    width: 500px;
+    width: 250px;
     text-align: center;
-    border-style: solid;
-    border-color: #909090;
+    border-top: solid #909090;
     border-width: 2px;
+    display: block;
+    height: 45px;
+    overflow: hidden;
+    transition: 1s ease-in;
 }
 
-.link {
-    margin: 10px auto;
-    text-align: center;
-    display: block;
-    width: 70px;
+div:hover {
+    height: 400px;
+    width: 500px;
 }
 
 p {
@@ -25,14 +26,8 @@ p {
 }
 
 .prints {
-    display: none;
-    text-align: center;
-}
-
-.link:hover + .prints{
     display: block;
-    margin: 20px auto 40px auto;
-    width: 500px;
-    height: auto;
+    width: 400px;
+    margin: 40px auto;
 }
 
