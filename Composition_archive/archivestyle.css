@@ -9,7 +9,7 @@ div {
     display:block;
     overflow: hidden;
     overflow-x: hidden;
-    transition: 2s ease-in;
+    transition: 1s ease-in;
 }
 
 div:hover {
