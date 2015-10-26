@@ -2,7 +2,6 @@ body {
     margin: auto;
     text-align: center;
     font-size: 0;
-    background-color: black;
 }
 
 .image {
@@ -11,6 +10,15 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.text {
+    width: 300%;
+    height: 300%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
 .wrapper {
@@ -25,14 +33,32 @@ body {
 }
 
 .square {
+    box-sizing: border-box;
     position: relative;
     background-color: white;
     display: inline-block;
-    width: 14%;
-    height: 14%;
-    margin: 0.1%;
+    width: 14.2857%;
+    height: 20%;
+    border: solid blue 1px;
+    overflow: visible;
 }
 
-.black {
-    background-color: black;
+.medium {
+    width: 7.1428%;
+    height: 10%;
+}
+
+.little {
+    width: 4%;
+    height: 5%;
+}
+
+.link {
+    width: 20%;
+    height: 20%;
+}
+
+.line {
+    width: 100%;
+    display: inline-block;
 }
