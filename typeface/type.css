@@ -4,6 +4,11 @@ body {
     font-size: 0;
 }
 
+.wrapper {
+    width: 90%;
+    text-align: center;
+}
+
 .image {
     width: 100%;
     height: 100%;
@@ -14,7 +19,7 @@ body {
 
 .text {
     width: 300%;
-    height: 300%;
+    height: 150%;
     position: absolute;
     top: 0;
     left: 0;
@@ -39,26 +44,27 @@ body {
     display: inline-block;
     width: 14.2857%;
     height: 20%;
-    border: solid blue 1px;
+    border: solid #DDD4E7 1px;
     overflow: visible;
 }
 
 .medium {
     width: 7.1428%;
-    height: 10%;
+    height: 15%;
 }
 
 .little {
     width: 4%;
-    height: 5%;
+    height: 15%;
 }
 
 .link {
-    width: 20%;
-    height: 20%;
+    width: 16.6666%;
+    height: 10%;
 }
 
 .line {
     width: 100%;
     display: inline-block;
 }
+
