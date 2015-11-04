@@ -25,8 +25,10 @@ console.log("hello");
 var clock = ["images/time/clock.png", "images/time/clockglitch.png"];
 var hourglass = ["images/time/hourglass.jpg", "images/time/hourglassglitch.jpg"];
 var door = ["images/time/door.jpg", "images/time/doorglitch.jpg"];
-var work = ["images/time/work.jpg", "images/time/workglitch.jpg"];
-var insomnia = ["images/time/insomnia.jpg", "images/time/insomniaglitch.jpg"];
+var calendar = ["images/time/calendar.jpg", "images/time/calendarglitch.jpg"];
+var work = ["images/time/work.jpg", "images/time/workglitch.jpg","images/time/eye.jpg"];
+var insomnia = ["images/time/insomnia.jpg", "images/time/insomniaglitch.jpg", "images/time/insomniaglitch2.jpg","images/time/eye.jpg","images/time/yellow.jpg" ];
+
 
 $(window).resize(function() {
     $(".clock").each(function() {
@@ -61,14 +63,38 @@ $(window).resize(function() {
 
 });
 
-var color = ["white", "grey"];
+$(window).resize(function() {
+    $(".calendar").each(function() {
+        var randomCalendar = calendar[Math.floor(Math.random()*2)];
+        console.log(randomCalendar);
+
+        $(this).attr("src",randomCalendar);
+
+    });
+
+});
+
+
+var colormedium = ["white", "white", "#FFF3D9"];
+var colorlittle = ["white", "#FFF3D9", "#FFE2A9"];
+
+$(window).resize(function() {
+    $(".medium").each(function() {
+        var randomColormedium = colormedium[Math.floor(Math.random()*3)];
+        console.log(randomColormedium);
+
+        $(this).css("background-color", randomColormedium);
+
+    });
+
+});
 
 $(window).resize(function() {
     $(".little").each(function() {
-        var randomColor = color[Math.floor(Math.random()*2)];
-        console.log(randomColor);
+        var randomColorlittle = colorlittle[Math.floor(Math.random()*3)];
+        console.log(randomColorlittle);
 
-        $(this).css("background-color", randomColor);
+        $(this).css("background-color", randomColorlittle);
 
     });
 
@@ -76,7 +102,7 @@ $(window).resize(function() {
 
 $(window).resize(function() {
     $(".work").each(function() {
-        var randomWork = work[Math.floor(Math.random()*2)];
+        var randomWork = work[Math.floor(Math.random()*3)];
         console.log(randomWork);
 
         $(this).attr("src",randomWork);
@@ -87,7 +113,7 @@ $(window).resize(function() {
 
 $(window).resize(function() {
     $(".insomnia").each(function() {
-        var randomInsomnia = insomnia[Math.floor(Math.random()*2)];
+        var randomInsomnia = insomnia[Math.floor(Math.random()*5)];
         console.log(randomInsomnia);
 
         $(this).attr("src",randomInsomnia);
@@ -95,6 +121,8 @@ $(window).resize(function() {
     });
 
 });
+
+
 
 $(".icon").click(function() {
     $(".rectangle").remove();

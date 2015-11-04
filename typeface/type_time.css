@@ -37,31 +37,37 @@ body {
 
 
 
-.rectangle {
-    position: fixed;
-    opacity: 0.8;
-    border: solid yellow 1px;
-    background-color: white;
-    width: 57.12%;
-    height: 60%;
-    z-index: 10;
-    top: 10%;
-    left: 21.42%;
-}
+/*.rectangle {*/
+/*    position: fixed;*/
+/*    opacity: 0.8;*/
+/*    border: solid yellow 1px;*/
+/*    background-color: white;*/
+/*    width: 57.12%;*/
+/*    height: 60%;*/
+/*    z-index: 10;*/
+/*    top: 10%;*/
+/*    left: 21.42%;*/
+/*}*/
 
 .text {
-    width: 75%;
-    height: 75%;
-    margin: 5%;
+    position: fixed;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    opacity: 0.9;
+    background-color: white;
+    z-index: 10;
+    top: 20%;
+    left: 20%;
 }
 
 .icon {
-    position: absolute;
-    width: 5%;
-    height: 5%;
-    right: 3%;
-    top: 5%;
-    
+    position: fixed;
+    width: 4%;
+    height: 4%;
+    right: 25%;
+    top: 25%;
+    z-index: 20;
 }
 
 .border {
