@@ -61,6 +61,19 @@ $(window).resize(function() {
 
 });
 
+var color = ["white", "grey"];
+
+$(window).resize(function() {
+    $(".little").each(function() {
+        var randomColor = color[Math.floor(Math.random()*2)];
+        console.log(randomColor);
+
+        $(this).css("background-color", randomColor);
+
+    });
+
+});
+
 $(window).resize(function() {
     $(".work").each(function() {
         var randomWork = work[Math.floor(Math.random()*2)];
@@ -81,5 +94,9 @@ $(window).resize(function() {
 
     });
 
+});
+
+$(".icon").click(function() {
+    $(".rectangle").remove();
 });
 
