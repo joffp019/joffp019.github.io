@@ -128,3 +128,58 @@ $(".icon").click(function() {
     $(".rectangle").remove();
 });
 
+//Footer hover states//
+
+$(".money").mouseenter(function() {
+    
+    // $(".time").html("src","phrases/glitches/timeglitch.png");
+    // $(".about").html("src","phrases/glitches/aboutglitch.png");
+    // $(".space").html("src","phrases/glitches/spaceglitch.png");
+    // $(".love").html("src","phrases/glitches/loveglitch.png");
+    
+});
+
+$(".money").mouseleave(function() {
+
+    $(".money").html("<img class='image' src='phrases/money.png'>");
+});
+
+$(".time").mouseenter(function() {
+
+    $(".time").html("<img class='image' src='phrases/glitches/timeglitch.png'>");
+});
+
+$(".time").mouseleave(function() {
+
+    $(".time").html("<img class='image' src='phrases/time.png'>");
+});
+
+$(".about").mouseenter(function() {
+
+    $(".about").attr("src",$(this).data("glitch"));
+});
+
+$(".about").mouseleave(function() {
+
+    $(this).attr("src",$(this).data("glitch"));
+});
+
+$(".space").mouseenter(function() {
+
+    $(".space").html("<img class='image' src='phrases/glitches/spaceglitch.png'>");
+});
+
+$(".space").mouseleave(function() {
+
+    $(".space").html("<img class='image' src='phrases/space.png'>");
+});
+
+$(".love").mouseenter(function() {
+
+    $(".love").html("<img class='image' src='phrases/glitches/loveglitch.png'>");
+});
+
+$(".love").mouseleave(function() {
+
+    $(".love").html("<img class='image' src='phrases/love.png'>");
+});

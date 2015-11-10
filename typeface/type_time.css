@@ -31,11 +31,9 @@ body {
     display: inline-block;
     width: 14.2857%;
     height: 20%;
-    border: solid #DDD4E7 1px;
+    border: solid #FFF3D9 1px;
     overflow: visible;
 }
-
-
 
 /*.rectangle {*/
 /*    position: fixed;*/
@@ -53,11 +51,11 @@ body {
     position: fixed;
     text-align: center;
     width: 60%;
-    height: 60%;
+    height: 70%;
     opacity: 0.9;
     background-color: white;
     z-index: 10;
-    top: 20%;
+    top: 10%;
     left: 20%;
 }
 
@@ -65,22 +63,14 @@ body {
     position: fixed;
     width: 4%;
     height: 4%;
-    right: 25%;
-    top: 25%;
+    right: 23%;
+    top: 15%;
     z-index: 20;
 }
 
 .border {
     border: solid yellow 2px;
     border-left: 0;
-}
-
-.green {
-    border: solid green 2px;
-}
-
-.blue {
-    border: solid blue 2px;
 }
 
 .medium {
