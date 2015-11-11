@@ -1,0 +1,121 @@
+body {
+    margin: auto;
+    text-align: center;
+    font-size: 0;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.divisor {
+    position: relative;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+}
+
+.subtitle {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.line {
+    margin: auto;
+}
+
+.square {
+    box-sizing: border-box;
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    width: 14.2857%;
+    height: 20%;
+    border: solid #DEFDFF 1px;
+    overflow: visible;
+}
+
+
+
+/*.rectangle {*/
+/*    position: fixed;*/
+/*    opacity: 0.8;*/
+/*    border: solid yellow 1px;*/
+/*    background-color: white;*/
+/*    width: 57.12%;*/
+/*    height: 60%;*/
+/*    z-index: 10;*/
+/*    top: 10%;*/
+/*    left: 21.42%;*/
+/*}*/
+
+.text {
+    position: fixed;
+    text-align: center;
+    width: 60%;
+    height: 70%;
+    opacity: 0.9;
+    background-color: white;
+    z-index: 10;
+    top: 10%;
+    left: 20%;
+}
+
+.icon {
+    position: fixed;
+    width: 4%;
+    height: 4%;
+    right: 23%;
+    top: 15%;
+    z-index: 20;
+}
+
+.border {
+    border: solid blue 2px;
+    border-left: 0;
+}
+
+.medium {
+    width: 7.69%;
+    height: 15%;
+}
+
+.little {
+    width: 4%;
+    height: 15%;
+}
+
+.link {
+    width: 20%;
+    height: 100%;
+}
+
+.line {
+    width: 100%;
+    display: inline-block;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    height: 10%;
+}
