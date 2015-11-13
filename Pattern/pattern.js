@@ -1,17 +1,59 @@
 for (var increment = 0; increment < 64; increment++) {
-  $("body").append('<div class="square"> </div>');
+  $("body").append('<div class="square first"> </div>');
 }
 
-// for (var increment = 0; increment < 4; increment++) {
-//   $("body").append('<div class="plane"> </div>');
-// }
+for (var increment = 0; increment < 64; increment++) {
+  $("body").append('<div class="square second"> </div>');
+}
+
+for (var increment = 0; increment < 64; increment++) {
+  $("body").append('<div class="square third"> </div>');
+}
+
+for (var increment = 0; increment < 64; increment++) {
+  $("body").append('<div class="square first"> </div>');
+}
+
+// $(".square").mousemove(function() {
+//     $(".square").each(function() {
+//         var number = Math.floor(Math.random()*24);
+//         console.log(number);
+
+//         $(this).html("<img class = 'tile' src='Brasilia/Brasilia-" + number + ".png'>");
+
+//     });
+
+// });
 
 $(".square").mousemove(function() {
-    $(".square").each(function() {
-        var number = Math.floor(Math.random()*24);
-        console.log(number);
+    $(".first").each(function() {
+        var firstPattern = Math.floor(Math.random() * 12) + 1;  
 
-        $(this).html("<img class = 'tile' src='Brasilia/Brasilia-" + number + ".png'>");
+        console.log(firstPattern);
+
+        $(this).html("<img class = 'tile' src='Brasilia/Brasilia-" + firstPattern + ".png'>");
+
+    });
+
+});
+
+$(".square").mousemove(function() {
+    $(".second").each(function() {
+        var secondPattern = Math.floor(Math.random() * 4) + 13;  
+        console.log(secondPattern);
+
+        $(this).html("<img class = 'tile' src='Brasilia/Brasilia-" + secondPattern + ".png'>");
+
+    });
+
+});
+
+$(".square").mousemove(function() {
+    $(".third").each(function() {
+        var thirdPattern = Math.floor(Math.random() * 4) + 17;
+        console.log(thirdPattern);
+
+        $(this).html("<img class = 'tile' src='Brasilia/Brasilia-" + thirdPattern + ".png'>");
 
     });
 
@@ -19,9 +61,28 @@ $(".square").mousemove(function() {
 
 $(window).click(function() {
     $(".plane").each(function() {
-        var topPosition = Math.floor(Math.random()*($(window).height()-75)) + "px";
-        var leftPosition = Math.floor(Math.random()*($(window).width()-75)) + "px";
+        var topPosition = Math.floor(Math.random()*($(window).height()-200)) + "px";
+        var leftPosition = Math.floor(Math.random()*($(window).width()-200)) + "px";
         $(this).css("top",topPosition).css("left",leftPosition);
     });
+});
+
+$(window).click(function() {
+    $(".plane").each(function() {
+        var newsize = (Math.random()*20) + 3 + "%";
+        $(this).css("height", newsize).css("width", newsize);
+    });
+});
+
+$(".square").mousemove(function() {
+    $(".rect").each(function() {
+        var ipe = Math.floor((Math.random()*3 + 1));  
+
+        console.log(ipe);
+
+        $(this).html("<img class = 'ipe' src='Brasilia/ipe" + ipe + ".jpg'>");
+
+    });
+
 });
 

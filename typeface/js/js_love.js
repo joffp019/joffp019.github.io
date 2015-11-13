@@ -22,51 +22,51 @@ console.log("hello");
 
 
 
-var night = ["images/space/night.jpg", "images/space/nightglitch.jpg", "images/space/nightglitch1.jpg"];
-var dubai = ["images/space/dubai.jpg", "images/space/dubaiglitch.jpg", "images/space/dubaiglitch1.jpg"];
-var hurricane = ["images/space/hurricane.jpg", "images/space/hurricaneglitch.jpg", "images/space/hurricaneglitch1.jpg"];
-var katrina = ["images/space/katrina.jpg", "images/space/katrinaglitch.jpg","images/space/katrinaglitch1.jpg"];
+var hands = ["images/love/hands.jpg", "images/love/handsglitch.jpg", "images/love/handsglitch1.jpg"];
+var party = ["images/love/party.jpg", "images/love/partyglitch.jpg", "images/love/partyglitch1.jpg"];
+var thekiss = ["images/love/thekiss.jpg", "images/love/thekissglitch.jpg", "images/love/thekissglitch1.jpg"];
+var prostitute = ["images/love/prostitute.jpg", "images/love/prostituteglitch.jpg","images/love/prostituteglitch1.jpg"];
 
 
 $(window).resize(function() {
-    $(".hurricane").each(function() {
-        var randomhurricane = hurricane[Math.floor(Math.random()*3)];
-        console.log(randomhurricane);
+    $(".thekiss").each(function() {
+        var randomthekiss = thekiss[Math.floor(Math.random()*3)];
+        console.log(randomthekiss);
 
-        $(this).attr("src",randomhurricane);
+        $(this).attr("src",randomthekiss);
 
     });
 
 });
 
 $(window).resize(function() {
-    $(".night").each(function() {
-        var randomnight = night[Math.floor(Math.random()*3)];
-        console.log(randomnight);
+    $(".hands").each(function() {
+        var randomhands = hands[Math.floor(Math.random()*3)];
+        console.log(randomhands);
 
-        $(this).attr("src",randomnight);
-
-    });
-
-});
-
-$(window).resize(function() {
-    $(".dubai").each(function() {
-        var randomdubai = dubai[Math.floor(Math.random()*3)];
-        console.log(randomdubai);
-
-        $(this).attr("src",randomdubai);
+        $(this).attr("src",randomhands);
 
     });
 
 });
 
 $(window).resize(function() {
-    $(".katrina").each(function() {
-        var randomkatrina = katrina[Math.floor(Math.random()*3)];
-        console.log(randomkatrina);
+    $(".party").each(function() {
+        var randomparty = party[Math.floor(Math.random()*3)];
+        console.log(randomparty);
 
-        $(this).attr("src",randomkatrina);
+        $(this).attr("src",randomparty);
+
+    });
+
+});
+
+$(window).resize(function() {
+    $(".prostitute").each(function() {
+        var randomprostitute = prostitute[Math.floor(Math.random()*3)];
+        console.log(randomprostitute);
+
+        $(this).attr("src",randomprostitute);
 
     });
 
@@ -74,8 +74,8 @@ $(window).resize(function() {
 
 
 
-var colormedium = ["white", "white", "#DEFDFF"];
-var colorlittle = ["white", "#DEFDFF", "#8FFCFF"];
+var colormedium = ["white", "white", "#FFE6E6"];
+var colorlittle = ["white", "#FFE6E6", "#FF9999"];
 
 $(window).resize(function() {
     $(".medium").each(function() {
@@ -103,15 +103,14 @@ $(".icon").click(function() {
     $(".rectangle").remove();
 });
 
-
 //Footer hover states//
 
 $(".money").mouseenter(function() {
     
-    $(".time").html("<a href='type_time.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
+    $(".time").html("<a href='type_time.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
     
 });
 
@@ -125,10 +124,10 @@ $(".money").mouseleave(function() {
 
 $(".time").mouseenter(function() {
     
-    $(".money").html("<a href='type_time.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
+    $(".money").html("<a href='type_time.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
     
 });
 
@@ -142,10 +141,10 @@ $(".time").mouseleave(function() {
 
 $(".space").mouseenter(function() {
     
-    $(".money").html("<a href='type_time.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".time").html("<a href='type_space.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
+    $(".money").html("<a href='type_time.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".time").html("<a href='type_space.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
     
 });
 
@@ -159,10 +158,10 @@ $(".space").mouseleave(function() {
 
 $(".love").mouseenter(function() {
     
-    $(".money").html("<a href='type_time.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".time").html("<a href='type_time.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
+    $(".money").html("<a href='type_time.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".time").html("<a href='type_time.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
     
 });
 
@@ -176,10 +175,10 @@ $(".love").mouseleave(function() {
 
 $(".about").mouseenter(function() {
     
-    $(".money").html("<a href='type_time.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".time").html("<a href='type_time.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
-    $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/space/countries/russia.png'/> </a>");
+    $(".money").html("<a href='type_time.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".time").html("<a href='type_time.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
+    $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/love/symbols/ring.png'/> </a>");
     
 });
 
