@@ -25,8 +25,9 @@ for (var increment = 0; increment < 64; increment++) {
 
 // });
 
-$(".square").mousemove(function() {
-    $(".first").each(function() {
+$(".first").mousemove(function() {
+// $(this).mousemove(function() {
+    $(this).each(function() {
         var firstPattern = Math.floor(Math.random() * 12) + 1;  
 
         console.log(firstPattern);
@@ -37,8 +38,8 @@ $(".square").mousemove(function() {
 
 });
 
-$(".square").mousemove(function() {
-    $(".second").each(function() {
+$(".second").mousemove(function() {
+    $(this).each(function() {
         var secondPattern = Math.floor(Math.random() * 4) + 13;  
         console.log(secondPattern);
 
@@ -48,8 +49,8 @@ $(".square").mousemove(function() {
 
 });
 
-$(".square").mousemove(function() {
-    $(".third").each(function() {
+$(".third").mousemove(function() {
+    $(this).each(function() {
         var thirdPattern = Math.floor(Math.random() * 4) + 17;
         console.log(thirdPattern);
 
@@ -74,7 +75,7 @@ $(window).click(function() {
     });
 });
 
-$(".square").mousemove(function() {
+$(".square").mouseleave(function() {
     $(".rect").each(function() {
         var ipe = Math.floor((Math.random()*3 + 1));  
 

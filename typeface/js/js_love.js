@@ -119,7 +119,6 @@ $(".money").mouseleave(function() {
     $(".time").html("<a href='type_money.html'> <img class = 'image' src='phrases/time.png'/> </a>");
     $(".about").html("<a href='type_about.html'> <img class = 'image' src='phrases/about.png'/> </a>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
-    $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/love.png'/> </a>");
 });
 
 $(".time").mouseenter(function() {
@@ -136,7 +135,6 @@ $(".time").mouseleave(function() {
     $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/money.png'/> </a>");
     $(".about").html("<a href='type_about.html'> <img class = 'image' src='phrases/about.png'/> </a>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
-    $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/love.png'/> </a>");
 });
 
 $(".space").mouseenter(function() {
@@ -153,7 +151,6 @@ $(".space").mouseleave(function() {
     $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/money.png'/> </a>");
     $(".about").html("<a href='type_about.html'> <img class = 'image' src='phrases/about.png'/> </a>");
     $(".time").html("<a href='type_time.html'> <img class = 'image' src='phrases/time.png'/> </a>");
-    $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/love.png'/> </a>");
 });
 
 $(".love").mouseenter(function() {
@@ -185,7 +182,6 @@ $(".about").mouseenter(function() {
 $(".about").mouseleave(function() {
 
     $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/money.png'/> </a>");
-    $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/love.png'/> </a>");
     $(".time").html("<a href='type_time.html'> <img class = 'image' src='phrases/time.png'/> </a>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
 });
