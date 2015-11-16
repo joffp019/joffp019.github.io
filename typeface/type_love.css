@@ -67,6 +67,10 @@ body {
 /*    left: 21.42%;*/
 /*}*/
 
+.red {
+    background-color: #FF9999;
+}
+
 .text {
     position: fixed;
     text-align: center;

@@ -14,19 +14,9 @@ for (var increment = 0; increment < 64; increment++) {
   $("body").append('<div class="square first"> </div>');
 }
 
-// $(".square").mousemove(function() {
-//     $(".square").each(function() {
-//         var number = Math.floor(Math.random()*24);
-//         console.log(number);
 
-//         $(this).html("<img class = 'tile' src='Brasilia/Brasilia-" + number + ".png'>");
-
-//     });
-
-// });
 
 $(".first").mousemove(function() {
-// $(this).mousemove(function() {
     $(this).each(function() {
         var firstPattern = Math.floor(Math.random() * 12) + 1;  
 

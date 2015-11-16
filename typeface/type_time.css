@@ -7,9 +7,27 @@ body {
 .image {
     width: 100%;
     height: 100%;
+    background-color: #FFE2A9;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.divisor {
+    position: relative;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+}
+
+.subtitle {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .wrapper {
@@ -69,7 +87,7 @@ body {
 }
 
 .border {
-    border: solid yellow 2px;
+    border: solid #FFF3D9 2px;
     border-left: 0;
 }
 

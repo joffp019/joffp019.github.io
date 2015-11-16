@@ -10,6 +10,24 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    background-color: #C6F9AF;
+}
+
+.divisor {
+    position: relative;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+}
+
+.subtitle {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .wrapper {
@@ -35,8 +53,6 @@ body {
     overflow: visible;
 }
 
-
-
 /*.rectangle {*/
 /*    position: fixed;*/
 /*    opacity: 0.8;*/
@@ -61,6 +77,16 @@ body {
     left: 20%;
 }
 
+.textabout {
+    background-color: #97F969;
+    opacity: 1;
+}
+
+.explanation {
+    background-color: #97F969;
+    display: none;
+}
+
 .icon {
     position: fixed;
     width: 4%;
@@ -71,7 +97,7 @@ body {
 }
 
 .border {
-    border: solid green 2px;
+    border: solid #E7FCDE 2px;
     border-left: 0;
 }
 
