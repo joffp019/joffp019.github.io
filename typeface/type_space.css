@@ -79,6 +79,17 @@ body {
     left: 20%;
 }
 
+.textabout {
+    background-color: #66FBFF;
+    opacity: 1;
+}
+
+.explanation {
+    background-color: #66FBFF;
+    display: none;
+}
+
+
 .icon {
     position: fixed;
     width: 4%;

@@ -98,7 +98,20 @@ $(window).resize(function() {
 });
 
 $(".icon").click(function() {
-    $(".rectangle").remove();
+    $(".rectangle").css("display", "none");
+});
+
+var clicked = false;
+
+$(".about").click(function() {
+    if (clicked == false) {
+        $(".explanation").css("display", "block"); 
+        clicked = true;
+    } else {
+        $(".explanation").css("display", "none");
+        clicked = false;
+    }
+   
 });
 
 
@@ -107,7 +120,7 @@ $(".icon").click(function() {
 $(".money").mouseenter(function() {
     
     $(".time").html("<a href='type_time.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
+    $(".about").html("<img class = 'image' src='images/time/gramophone.png'/>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
     $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
     
@@ -115,7 +128,7 @@ $(".money").mouseenter(function() {
 
 $(".money").mouseleave(function() {
 
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='phrases/about.png'/> </a>");
+    $(".about").html("<img class = 'image' src='phrases/about.png'/>");
     $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/love.png'/> </a>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
 });
@@ -123,7 +136,7 @@ $(".money").mouseleave(function() {
 $(".time").mouseenter(function() {
     
     $(".money").html("<a href='type_time.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
+    $(".about").html("<img class = 'image' src='images/time/gramophone.png'/>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
     $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
     
@@ -132,7 +145,7 @@ $(".time").mouseenter(function() {
 $(".time").mouseleave(function() {
 
     $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/money.png'/> </a>");
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='phrases/about.png'/> </a>");
+    $(".about").html("<img class = 'image' src='phrases/about.png'/>");
     $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/love.png'/> </a>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
 });
@@ -140,7 +153,7 @@ $(".time").mouseleave(function() {
 $(".space").mouseenter(function() {
     
     $(".money").html("<a href='type_time.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
+    $(".about").html("<img class = 'image' src='images/time/gramophone.png'/>");
     $(".time").html("<a href='type_space.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
     $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
     
@@ -149,14 +162,14 @@ $(".space").mouseenter(function() {
 $(".space").mouseleave(function() {
 
     $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/money.png'/> </a>");
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='phrases/about.png'/> </a>");
+    $(".about").html("<img class = 'image' src='phrases/about.png'/>");
     $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/love.png'/> </a>");
 });
 
 $(".love").mouseenter(function() {
     
     $(".money").html("<a href='type_time.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
+    $(".about").html("<img class = 'image' src='images/time/gramophone.png'/>");
     $(".time").html("<a href='type_time.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/time/gramophone.png'/> </a>");
     
@@ -165,7 +178,7 @@ $(".love").mouseenter(function() {
 $(".love").mouseleave(function() {
 
     $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/money.png'/> </a>");
-    $(".about").html("<a href='type_about.html'> <img class = 'image' src='phrases/about.png'/> </a>");
+    $(".about").html("<img class = 'image' src='phrases/about.png'/>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
 });
 

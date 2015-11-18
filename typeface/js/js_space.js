@@ -22,10 +22,10 @@ console.log("hello");
 
 
 
-var night = ["images/space/night.jpg", "images/space/nightglitch.jpg", "images/space/nightglitch1.jpg"];
-var dubai = ["images/space/dubai.jpg", "images/space/dubaiglitch.jpg", "images/space/dubaiglitch1.jpg"];
-var hurricane = ["images/space/hurricane.jpg", "images/space/hurricaneglitch.jpg", "images/space/hurricaneglitch1.jpg"];
-var katrina = ["images/space/katrina.jpg", "images/space/katrinaglitch.jpg","images/space/katrinaglitch1.jpg"];
+var night = ["images/space/nightglitch3.jpg", "images/space/night.jpg", "images/space/nightglitch4.jpg"];
+var dubai = ["images/space/dubaiglitch3.jpg", "images/space/dubaiglitch.jpg", "images/space/dubaiglitch4.jpg"];
+var hurricane = ["images/space/hurricaneglitch3.jpg", "images/space/hurricaneglitch.jpg", "images/space/hurricaneglitch4.jpg"];
+var katrina = ["images/space/katrina.jpg", "images/space/katrinaglitch3.jpg","images/space/katrinaglitch4.jpg"];
 
 
 $(window).resize(function() {
@@ -100,7 +100,20 @@ $(window).resize(function() {
 });
 
 $(".icon").click(function() {
-    $(".rectangle").remove();
+    $(".rectangle").css("display", "none");
+});
+
+var clicked = false;
+
+$(".about").click(function() {
+    if (clicked == false) {
+        $(".explanation").css("display", "block"); 
+        clicked = true;
+    } else {
+        $(".explanation").css("display", "none");
+        clicked = false;
+    }
+   
 });
 
 

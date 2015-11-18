@@ -4,6 +4,15 @@ body {
     font-size: 0;
 }
 
+.distorted {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
 .image {
     width: 100%;
     height: 100%;
@@ -67,10 +76,6 @@ body {
 /*    left: 21.42%;*/
 /*}*/
 
-.red {
-    background-color: #FF9999;
-}
-
 .text {
     position: fixed;
     text-align: center;
@@ -81,6 +86,16 @@ body {
     z-index: 10;
     top: 10%;
     left: 20%;
+}
+
+.textabout {
+    background-color: #FF7676;
+    opacity: 1;
+}
+
+.explanation {
+    background-color: #FF7676;
+    display: none;
 }
 
 .icon {
