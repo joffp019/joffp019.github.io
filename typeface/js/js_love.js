@@ -132,6 +132,7 @@ $(".money").mouseleave(function() {
     $(".time").html("<a href='type_money.html'> <img class = 'image' src='phrases/time.png'/> </a>");
     $(".about").html("<img class = 'image' src='phrases/about.png'/>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
+    $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/selected/selectedlove.png'/> </a>");
 });
 
 $(".time").mouseenter(function() {
@@ -148,6 +149,7 @@ $(".time").mouseleave(function() {
     $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/money.png'/> </a>");
     $(".about").html("<img class = 'image' src='phrases/about.png'/>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
+    $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/selected/selectedlove.png'/> </a>");
 });
 
 $(".space").mouseenter(function() {
@@ -164,6 +166,7 @@ $(".space").mouseleave(function() {
     $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/money.png'/> </a>");
     $(".about").html("<img class = 'image' src='phrases/about.png'/>");
     $(".time").html("<a href='type_time.html'> <img class = 'image' src='phrases/time.png'/> </a>");
+    $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/selected/selectedlove.png'/> </a>");
 });
 
 $(".love").mouseenter(function() {
@@ -197,4 +200,5 @@ $(".about").mouseleave(function() {
     $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/money.png'/> </a>");
     $(".time").html("<a href='type_time.html'> <img class = 'image' src='phrases/time.png'/> </a>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
+    $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/selected/selectedlove.png'/> </a>");
 });

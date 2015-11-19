@@ -146,6 +146,7 @@ $(".time").mouseleave(function() {
     $(".about").html("<img class = 'image' src='phrases/about.png'/>");
     $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/love.png'/> </a>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
+    $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/selected/selectedmoney.png'/> </a>");
 });
 
 $(".space").mouseenter(function() {
@@ -162,6 +163,7 @@ $(".space").mouseleave(function() {
     $(".time").html("<a href='type_time.html'> <img class = 'image' src='phrases/time.png'/> </a>");
     $(".about").html("<img class = 'image' src='phrases/about.png'/>");
     $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/love.png'/> </a>");
+    $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/selected/selectedmoney.png'/> </a>");
 });
 
 $(".love").mouseenter(function() {
@@ -178,6 +180,7 @@ $(".love").mouseleave(function() {
     $(".time").html("<a href='type_time.html'> <img class = 'image' src='phrases/time.png'/> </a>");
     $(".about").html("<img class = 'image' src='phrases/about.png'/>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
+    $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/selected/selectedmoney.png'/> </a>");
 });
 
 $(".about").mouseenter(function() {
@@ -186,7 +189,7 @@ $(".about").mouseenter(function() {
     $(".love").html("<a href='type_love.html'> <img class = 'image' src='images/money/currency/pound.png'/> </a>");
     $(".time").html("<a href='type_time.html'> <img class = 'image' src='images/money/currency/pound.png'/> </a>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='images/money/currency/pound.png'/> </a>");
-    
+
 });
 
 $(".about").mouseleave(function() {
@@ -194,4 +197,5 @@ $(".about").mouseleave(function() {
     $(".time").html("<a href='type_time.html'> <img class = 'image' src='phrases/time.png'/> </a>");
     $(".love").html("<a href='type_love.html'> <img class = 'image' src='phrases/love.png'/> </a>");
     $(".space").html("<a href='type_space.html'> <img class = 'image' src='phrases/space.png'/> </a>");
+    $(".money").html("<a href='type_money.html'> <img class = 'image' src='phrases/selected/selectedmoney.png'/> </a>");
 });
