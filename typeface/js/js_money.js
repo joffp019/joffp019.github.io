@@ -25,7 +25,7 @@ var jobs = ["images/money/jobs.jpg", "images/money/jobsglitch.jpg", "images/mone
 var market = ["images/money/market.jpg", "images/money/marketglitch.jpg", "images/money/marketglitch1.jpg"];
 var morumbi = ["images/money/morumbi.jpg", "images/money/morumbiglitch.jpg","images/money/morumbiglitch1.jpg"];
 
-$(window).resize(function() {
+$(window).scroll(function() {
     $(".1929").each(function() {
         var randomcrisis = crisis[Math.floor(Math.random()*3)];
         console.log(randomcrisis);
@@ -37,7 +37,7 @@ $(window).resize(function() {
 });
 
 
-$(window).resize(function() {
+$(window).scroll(function() {
     $(".market").each(function() {
         var randommarket = market[Math.floor(Math.random()*3)];
         console.log(randommarket);
@@ -48,7 +48,7 @@ $(window).resize(function() {
 
 });
 
-$(window).resize(function() {
+$(window).scroll(function() {
     $(".jobs").each(function() {
         var randomjobs = jobs[Math.floor(Math.random()*3)];
         console.log(randomjobs);
@@ -59,7 +59,7 @@ $(window).resize(function() {
 
 });
 
-$(window).resize(function() {
+$(window).scroll(function() {
     $(".morumbi").each(function() {
         var randommorumbi = morumbi[Math.floor(Math.random()*3)];
         console.log(randommorumbi);
@@ -74,7 +74,7 @@ $(window).resize(function() {
 var colormedium = ["white", "white", "#E7FCDE"];
 var colorlittle = ["white", "#C6F9AF", "#E7FCDE"];
 
-$(window).resize(function() {
+$(window).scroll(function() {
     $(".medium").each(function() {
         var randomColormedium = colormedium[Math.floor(Math.random()*3)];
         console.log(randomColormedium);
@@ -85,7 +85,7 @@ $(window).resize(function() {
 
 });
 
-$(window).resize(function() {
+$(window).scroll(function() {
     $(".little").each(function() {
         var randomColorlittle = colorlittle[Math.floor(Math.random()*3)];
         console.log(randomColorlittle);
