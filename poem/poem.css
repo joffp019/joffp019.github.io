@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: courier;
+    color: black;
+}
+
+textarea {
+    height: 48%;
+    width: 100%;
+    font-family: helvetica;
+    font-size: 10pt;
+    border: none;
+}
+
+textarea:focus { outline: none; }
+
+.read {
+    height: 48%;
+    width: 100%;
+    font-size: 20pt;
+    overflow: scroll;
+}
+
+h1 {
+    position: fixed;
+}
+
+.title {
+    bottom: 0;
+    left: 2px;
+    margin: 0;
+}
+
+.clear {
+    bottom: 0;
+    right: 2px;
+    margin: 0;
+}
