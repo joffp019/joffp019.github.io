@@ -3,6 +3,8 @@
         
         <title> A word, a poem </title>
         
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Abril+Fatface|Rock+Salt' rel='stylesheet' type='text/css'>
+        
         <link href="poem.css" rel="stylesheet" type="text/css" />
         
     </head>
@@ -13,13 +15,17 @@
         
         <hr>
         
-        <textarea placeholder="type anything"></textarea>
+        <textarea class="textinput" placeholder="type anything"> </textarea>
         
         <h1 class="title"> a word, a poem </h1>
         
         <div class = "erase">
             <h1 class="clear"> clear </h1>
         </div>
+        
+        <audio id="horse">
+          <source src="type.wav" type="audio/wav">
+        </audio>
         
         <script src="jquery.js"></script>
         <script src="poem.js"></script>

@@ -1,4 +1,7 @@
-var typo = new Array("helvetica", "courier", "arial", "times new roman");
+$('.textinput').focus();
+
+
+var typo = new Array("helvetica", "courier", "times new roman", "Roboto Slab", "Merriweather", "Abril Fatface", "Rock Salt");
 
 var letter_a = new Array("a","able","about","above","across","act","action","actually","add","addition","adjective","afraid","Africa","after","again","against","age","ago","agreed","ahead","air","all","allow","almost","alone","along","already","also","although","always","am","America","among","amount","an","and","angle","animal","another","answer","any","anything","appear","apple","are","area","arms","army","around","arrived","art","as","ask","at","away");
 var letter_b = new Array("baby","back","bad","ball","bank","base","be","bear","beat","beautiful","became","because","become","bed","been","before","began","begin","behind","being","believe","bell","belong","below","beside","best","better","between","big","bill","birds","bit","black","block","blood","blow","blue","board","boat","body","bones","book","born","both","bottom","bought","box","boy","branches","break","bright","bring","British","broken","brother","brought","brown","build","building","built","burning","business","but","buy","by");
@@ -23,92 +26,106 @@ var letter_t = new Array("table","take","talk","tall","teacher","team","tell","t
 var letter_u = new Array("uncle","under","underline","understand","unit","until","up","upon","us","use","usually");
 var letter_v = new Array("valley","value","various","verb","very","view","village","visit","voice","vowel");
 var letter_w = new Array("wait","walk","wall","want","war","warm","was","wash","Washington","wasn't","watch","water","waves","way","we","wear","weather","week","weight","we'll","well","went","were","west","western","what","wheels","when","where","whether","which","while","white","who","whole","whose","why","wide","wife","wild","will","win","wind","window","wings","winter","wire","wish","with","within","without","woman","women","wonder","won't","wood","words","work","workers","world","would","wouldn't","write","written","wrong","wrote");
-var letter_x = new Array
+var letter_x = new Array("?", "!", ";", "-", "*", ",");
 var letter_y = new Array("yard","years","yellow","yes","yet","you","young","your","you're","yourself");
-var letter_z = new Array
+
+var $cont = $('.read');
+$cont[0].scrollTop = $cont[0].scrollHeight;
 
 $("textarea").keypress(function(event){
     console.log(event);
+    var typing = new Audio('type.wav');
+    var typingz = new Audio('typez.wav');
+    typing.pause(); 
+    typing.currentTime = 0;
+    typing.play();
+    
     if(event.keyCode == 97) {
-        $(".read").append(letter_a[Math.floor(Math.random()*letter_a.length)] + " ");
+        $(".read").append("<p>" + letter_a[Math.floor(Math.random()*letter_a.length)] + " " + "</p>");
         }
     if(event.keyCode == 98) {
-        $(".read").append(letter_b[Math.floor(Math.random()*letter_b.length)] + " ");
+        $(".read").append("<p>" + letter_b[Math.floor(Math.random()*letter_b.length)] + " " + "</p>");
         }
     if(event.keyCode == 99) {
-        $(".read").append(letter_c[Math.floor(Math.random()*letter_c.length)] + " ");
+        $(".read").append("<p>" + letter_c[Math.floor(Math.random()*letter_c.length)] + " " + "</p>");
         }    
     if(event.keyCode == 100) {
-        $(".read").append(letter_d[Math.floor(Math.random()*letter_d.length)] + " ");
+        $(".read").append("<p>" + letter_d[Math.floor(Math.random()*letter_d.length)] + " " + "</p>");
         }
     if(event.keyCode == 101) {
-        $(".read").append(letter_e[Math.floor(Math.random()*letter_e.length)] + " ");
+        $(".read").append("<p>" + letter_e[Math.floor(Math.random()*letter_e.length)] + " " + "</p>");
         }
     if(event.keyCode == 102) {
-        $(".read").append(letter_f[Math.floor(Math.random()*letter_f.length)] + " ");
+        $(".read").append("<p>" + letter_f[Math.floor(Math.random()*letter_f.length)] + " " + "</p>");
         }   
     if(event.keyCode == 103) {
-        $(".read").append(letter_g[Math.floor(Math.random()*letter_g.length)] + " ");
+        $(".read").append("<p>" + letter_g[Math.floor(Math.random()*letter_g.length)] + " " + "</p>");
         }
     if(event.keyCode == 104) {
-        $(".read").append(letter_h[Math.floor(Math.random()*letter_h.length)] + " ");
+        $(".read").append("<p>" + letter_h[Math.floor(Math.random()*letter_h.length)] + " " + "</p>");
         }    
     if(event.keyCode == 105) {
-        $(".read").append(letter_i[Math.floor(Math.random()*letter_i.length)] + " ");
+        $(".read").append("<p>" + letter_i[Math.floor(Math.random()*letter_i.length)] + " " + "</p>");
         }    
     if(event.keyCode == 106) {
-        $(".read").append(letter_j[Math.floor(Math.random()*letter_j.length)] + " ");
+        $(".read").append("<p>" + letter_j[Math.floor(Math.random()*letter_j.length)] + " " + "</p>");
         } 
     if(event.keyCode == 107) {
-        $(".read").append(letter_k[Math.floor(Math.random()*letter_k.length)] + " ");
+        $(".read").append("<p>" + letter_k[Math.floor(Math.random()*letter_k.length)] + " " + "</p>");
         }     
     if(event.keyCode == 108) {
-        $(".read").append(letter_l[Math.floor(Math.random()*letter_l.length)] + " ");
+        $(".read").append("<p>" + letter_l[Math.floor(Math.random()*letter_l.length)] + " " + "</p>");
         }  
     if(event.keyCode == 109) {
-        $(".read").append(letter_m[Math.floor(Math.random()*letter_m.length)] + " ");
+        $(".read").append("<p>" + letter_m[Math.floor(Math.random()*letter_m.length)] + " " + "</p>");
         }
     if(event.keyCode == 110) {
-        $(".read").append(letter_n[Math.floor(Math.random()*letter_n.length)] + " ");
+        $(".read").append("<p>" + letter_n[Math.floor(Math.random()*letter_n.length)] + " " + "</p>");
         } 
     if(event.keyCode == 111) {
-        $(".read").append(letter_o[Math.floor(Math.random()*letter_o.length)] + " ");
+        $(".read").append("<p>" + letter_o[Math.floor(Math.random()*letter_o.length)] + " " + "</p>");
         } 
     if(event.keyCode == 112) {
-        $(".read").append(letter_p[Math.floor(Math.random()*letter_p.length)] + " ");
+        $(".read").append("<p>" + letter_p[Math.floor(Math.random()*letter_p.length)] + " " + "</p>");
         } 
     if(event.keyCode == 113) {
-        $(".read").append(letter_q[Math.floor(Math.random()*letter_q.length)] + " ");
+        $(".read").append("<p>" + letter_q[Math.floor(Math.random()*letter_q.length)] + " " + "</p>");
         }     
     if(event.keyCode == 114) {
-        $(".read").append(letter_r[Math.floor(Math.random()*letter_r.length)] + " ");
+        $(".read").append("<p>" + letter_r[Math.floor(Math.random()*letter_r.length)] + " " + "</p>");
         } 
     if(event.keyCode == 115) {
-        $(".read").append(letter_s[Math.floor(Math.random()*letter_s.length)] + " ");
+        $(".read").append("<p>" + letter_s[Math.floor(Math.random()*letter_s.length)] + " " + "</p>");
         } 
     if(event.keyCode == 116) {
-        $(".read").append(letter_t[Math.floor(Math.random()*letter_t.length)] + " ");
+        $(".read").append("<p>" + letter_t[Math.floor(Math.random()*letter_t.length)] + " " + "</p>");
         } 
     if(event.keyCode == 117) {
-        $(".read").append(letter_u[Math.floor(Math.random()*letter_u.length)] + " ");
+        $(".read").append("<p>" + letter_u[Math.floor(Math.random()*letter_u.length)] + " " + "</p>");
         } 
     if(event.keyCode == 118) {
-        $(".read").append(letter_v[Math.floor(Math.random()*letter_v.length)] + " ");
+        $(".read").append("<p>" + letter_v[Math.floor(Math.random()*letter_v.length)] + " " + "</p>");
         }   
     if(event.keyCode == 119) {
-        $(".read").append(letter_w[Math.floor(Math.random()*letter_w.length)] + " ");
+        $(".read").append("<p>" + letter_w[Math.floor(Math.random()*letter_w.length)] + " " + "</p>");
         }
     if(event.keyCode == 120) {
-        $(".read").append(letter_x[Math.floor(Math.random()*letter_x.length)] + " ");
+        $(".read").append("<p>" + letter_x[Math.floor(Math.random()*letter_x.length)] + " " + "</p>");
         }
     if(event.keyCode == 121) {
-        $(".read").append(letter_y[Math.floor(Math.random()*letter_y.length)] + " ");
+        $(".read").append("<p>" + letter_y[Math.floor(Math.random()*letter_y.length)] + " " + "</p>");
         }
     if(event.keyCode == 122) {
-        $(".read").append(letter_z[Math.floor(Math.random()*letter_z.length)] + " ");
-        }    
-    }
-);   
+        typing.pause();
+        typingz.pause(); 
+        typingz.currentTime = 0;
+        typingz.play();
+        }  
+        
+    $(".read").animate({ scrollTop: $(document).height() });
+    
+});
+
 
 // Space button
 
@@ -126,4 +143,6 @@ $(".clear").click(function(event) {
     console.log(event); 
     $(".read").empty();
 });
+    
+    
     
