@@ -1,7 +1,7 @@
 $('.textinput').focus();
 
 
-var typo = new Array("helvetica", "courier", "times new roman", "Roboto Slab", "Merriweather", "Abril Fatface", "Rock Salt");
+var fonts = new Array("helvetica", "courier", "timesnewroman", "robotoslab", "merriweather", "abrilfatface", "rocksalt");
 
 var letter_a = new Array("a","able","about","above","across","act","action","actually","add","addition","adjective","afraid","Africa","after","again","against","age","ago","agreed","ahead","air","all","allow","almost","alone","along","already","also","although","always","am","America","among","amount","an","and","angle","animal","another","answer","any","anything","appear","apple","are","area","arms","army","around","arrived","art","as","ask","at","away");
 var letter_b = new Array("baby","back","bad","ball","bank","base","be","bear","beat","beautiful","became","because","become","bed","been","before","began","begin","behind","being","believe","bell","belong","below","beside","best","better","between","big","bill","birds","bit","black","block","blood","blow","blue","board","boat","body","bones","book","born","both","bottom","bought","box","boy","branches","break","bright","bring","British","broken","brother","brought","brown","build","building","built","burning","business","but","buy","by");
@@ -32,6 +32,8 @@ var letter_y = new Array("yard","years","yellow","yes","yet","you","young","your
 var $cont = $('.read');
 $cont[0].scrollTop = $cont[0].scrollHeight;
 
+var current_font = 'times new roman';
+
 $("textarea").keypress(function(event){
     console.log(event);
     var typing = new Audio('type.wav');
@@ -40,82 +42,90 @@ $("textarea").keypress(function(event){
     typing.currentTime = 0;
     typing.play();
     
-    if(event.keyCode == 97) {
-        $(".read").append("<p>" + letter_a[Math.floor(Math.random()*letter_a.length)] + " " + "</p>");
+    if(event.keyCode == 97 || event.keyCode == 65) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_a[Math.floor(Math.random()*letter_a.length)] + " " + "</p>");
         }
-    if(event.keyCode == 98) {
-        $(".read").append("<p>" + letter_b[Math.floor(Math.random()*letter_b.length)] + " " + "</p>");
+    if(event.keyCode == 98 || event.keyCode == 66) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_b[Math.floor(Math.random()*letter_b.length)] + " " + "</p>");
         }
-    if(event.keyCode == 99) {
-        $(".read").append("<p>" + letter_c[Math.floor(Math.random()*letter_c.length)] + " " + "</p>");
+    if(event.keyCode == 99 || event.keyCode == 67) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_c[Math.floor(Math.random()*letter_c.length)] + " " + "</p>");
         }    
-    if(event.keyCode == 100) {
-        $(".read").append("<p>" + letter_d[Math.floor(Math.random()*letter_d.length)] + " " + "</p>");
+    if(event.keyCode == 100 || event.keyCode == 68) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_d[Math.floor(Math.random()*letter_d.length)] + " " + "</p>");
         }
-    if(event.keyCode == 101) {
-        $(".read").append("<p>" + letter_e[Math.floor(Math.random()*letter_e.length)] + " " + "</p>");
+    if(event.keyCode == 101 || event.keyCode == 69) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_e[Math.floor(Math.random()*letter_e.length)] + " " + "</p>");
         }
-    if(event.keyCode == 102) {
-        $(".read").append("<p>" + letter_f[Math.floor(Math.random()*letter_f.length)] + " " + "</p>");
+    if(event.keyCode == 102 || event.keyCode == 70) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_f[Math.floor(Math.random()*letter_f.length)] + " " + "</p>");
         }   
-    if(event.keyCode == 103) {
-        $(".read").append("<p>" + letter_g[Math.floor(Math.random()*letter_g.length)] + " " + "</p>");
+    if(event.keyCode == 103 || event.keyCode == 71) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_g[Math.floor(Math.random()*letter_g.length)] + " " + "</p>");
         }
-    if(event.keyCode == 104) {
-        $(".read").append("<p>" + letter_h[Math.floor(Math.random()*letter_h.length)] + " " + "</p>");
+    if(event.keyCode == 104 || event.keyCode == 72) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_h[Math.floor(Math.random()*letter_h.length)] + " " + "</p>");
         }    
-    if(event.keyCode == 105) {
-        $(".read").append("<p>" + letter_i[Math.floor(Math.random()*letter_i.length)] + " " + "</p>");
+    if(event.keyCode == 105 || event.keyCode == 73) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_i[Math.floor(Math.random()*letter_i.length)] + " " + "</p>");
         }    
-    if(event.keyCode == 106) {
-        $(".read").append("<p>" + letter_j[Math.floor(Math.random()*letter_j.length)] + " " + "</p>");
+    if(event.keyCode == 106 || event.keyCode == 74) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_j[Math.floor(Math.random()*letter_j.length)] + " " + "</p>");
         } 
-    if(event.keyCode == 107) {
-        $(".read").append("<p>" + letter_k[Math.floor(Math.random()*letter_k.length)] + " " + "</p>");
+    if(event.keyCode == 107 || event.keyCode == 75) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_k[Math.floor(Math.random()*letter_k.length)] + " " + "</p>");
         }     
-    if(event.keyCode == 108) {
-        $(".read").append("<p>" + letter_l[Math.floor(Math.random()*letter_l.length)] + " " + "</p>");
+    if(event.keyCode == 108 || event.keyCode == 76) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_l[Math.floor(Math.random()*letter_l.length)] + " " + "</p>");
         }  
-    if(event.keyCode == 109) {
-        $(".read").append("<p>" + letter_m[Math.floor(Math.random()*letter_m.length)] + " " + "</p>");
+    if(event.keyCode == 109 || event.keyCode == 77) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_m[Math.floor(Math.random()*letter_m.length)] + " " + "</p>");
         }
-    if(event.keyCode == 110) {
-        $(".read").append("<p>" + letter_n[Math.floor(Math.random()*letter_n.length)] + " " + "</p>");
+    if(event.keyCode == 110 || event.keyCode == 78) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_n[Math.floor(Math.random()*letter_n.length)] + " " + "</p>");
         } 
-    if(event.keyCode == 111) {
-        $(".read").append("<p>" + letter_o[Math.floor(Math.random()*letter_o.length)] + " " + "</p>");
+    if(event.keyCode == 111 || event.keyCode == 79) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_o[Math.floor(Math.random()*letter_o.length)] + " " + "</p>");
         } 
-    if(event.keyCode == 112) {
-        $(".read").append("<p>" + letter_p[Math.floor(Math.random()*letter_p.length)] + " " + "</p>");
+    if(event.keyCode == 112 || event.keyCode == 80) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_p[Math.floor(Math.random()*letter_p.length)] + " " + "</p>");
         } 
-    if(event.keyCode == 113) {
-        $(".read").append("<p>" + letter_q[Math.floor(Math.random()*letter_q.length)] + " " + "</p>");
+    if(event.keyCode == 113 || event.keyCode == 81) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_q[Math.floor(Math.random()*letter_q.length)] + " " + "</p>");
         }     
-    if(event.keyCode == 114) {
-        $(".read").append("<p>" + letter_r[Math.floor(Math.random()*letter_r.length)] + " " + "</p>");
+    if(event.keyCode == 114 || event.keyCode == 82) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_r[Math.floor(Math.random()*letter_r.length)] + " " + "</p>");
         } 
-    if(event.keyCode == 115) {
-        $(".read").append("<p>" + letter_s[Math.floor(Math.random()*letter_s.length)] + " " + "</p>");
+    if(event.keyCode == 115 || event.keyCode == 83) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_s[Math.floor(Math.random()*letter_s.length)] + " " + "</p>");
         } 
-    if(event.keyCode == 116) {
-        $(".read").append("<p>" + letter_t[Math.floor(Math.random()*letter_t.length)] + " " + "</p>");
+    if(event.keyCode == 116 || event.keyCode == 84) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_t[Math.floor(Math.random()*letter_t.length)] + " " + "</p>");
         } 
-    if(event.keyCode == 117) {
-        $(".read").append("<p>" + letter_u[Math.floor(Math.random()*letter_u.length)] + " " + "</p>");
+    if(event.keyCode == 117 || event.keyCode == 85) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_u[Math.floor(Math.random()*letter_u.length)] + " " + "</p>");
         } 
-    if(event.keyCode == 118) {
-        $(".read").append("<p>" + letter_v[Math.floor(Math.random()*letter_v.length)] + " " + "</p>");
+    if(event.keyCode == 118 || event.keyCode == 86) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_v[Math.floor(Math.random()*letter_v.length)] + " " + "</p>");
         }   
-    if(event.keyCode == 119) {
-        $(".read").append("<p>" + letter_w[Math.floor(Math.random()*letter_w.length)] + " " + "</p>");
+    if(event.keyCode == 119 || event.keyCode == 87) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_w[Math.floor(Math.random()*letter_w.length)] + " " + "</p>");
         }
-    if(event.keyCode == 120) {
-        $(".read").append("<p>" + letter_x[Math.floor(Math.random()*letter_x.length)] + " " + "</p>");
+    if(event.keyCode == 120 || event.keyCode == 88) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_x[Math.floor(Math.random()*letter_x.length)] + " " + "</p>");
         }
-    if(event.keyCode == 121) {
-        $(".read").append("<p>" + letter_y[Math.floor(Math.random()*letter_y.length)] + " " + "</p>");
+    if(event.keyCode == 121 || event.keyCode == 89) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_y[Math.floor(Math.random()*letter_y.length)] + " " + "</p>");
         }
-    if(event.keyCode == 122) {
+    if(event.keyCode == 20 || event.keyCode == 16 || event.keyCode == 46) {
+        $(".read").append("</br>");
+        typing.pause();
+        typingz.pause(); 
+        typingz.currentTime = 0;
+        typingz.play();
+        }    
+    if(event.keyCode == 13) {
+        $(".read").append("</br>");
         typing.pause();
         typingz.pause(); 
         typingz.currentTime = 0;
@@ -132,7 +142,8 @@ $("textarea").keypress(function(event){
 $("textarea").keypress(function(event){
     console.log(event);
     if(event.keyCode == 32) {
-        $("body").css("font-family", typo[Math.floor(Math.random()*typo.length)]);
+        var random_number = Math.floor(Math.random() * fonts.length);
+        current_font = fonts[random_number];
         }
     }
 ); 

@@ -6,7 +6,8 @@ body {
 
 textarea {
     height: 48%;
-    width: 100%;
+    width: 96%;
+    margin-left: 2%;
     font-family: helvetica;
     font-size: 10pt;
     border: none;
@@ -15,8 +16,6 @@ textarea {
 p {
     display: inline;
 }
-
-textarea:focus { outline: none; }
 
 .read {
     height: 48%;
@@ -29,17 +28,47 @@ textarea:focus { outline: none; }
 
 h1 {
     position: fixed;
+    font-style: normal;
 }
 
 .title {
-    bottom: 0;
-    left: 2px;
+    font-style: normal;
+    bottom: 10px;
+    left: 15px;
     margin: 0;
 }
 
 .clear {
-    bottom: 0;
-    right: 2px;
+    bottom: 10px;
+    right: 15px;
     margin: 0;
     cursor: pointer;
+}
+
+.helvetica {
+    font-family: helvetica;
+}
+
+.courier {
+    font-family: courier;
+}
+
+.timesnewroman {
+    font-family: times new roman;
+}
+
+.robotoslab {
+    font-family: "Roboto Slab";
+}
+
+.merriweather {
+    font-family: "Merriweather";
+}
+
+.abrilfatface {
+    font-family: "Abril Fatface";
+}
+
+.rocksalt {
+    font-family: "Rock Salt";
 }
