@@ -147,7 +147,6 @@ $("textarea").keydown(function(){
     if(event.keyCode == 20 || event.keyCode == 16) {
         var typing = new Audio('type.wav');
     var typingz = new Audio('typez.wav');
-    $(".read").append("</br>");
         typing.pause();
         typingz.pause(); 
         typing.currentTime = 0;
