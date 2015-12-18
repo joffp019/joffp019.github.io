@@ -28,6 +28,7 @@ var letter_v = new Array("valley","value","various","verb","very","view","villag
 var letter_w = new Array("wait","walk","wall","want","war","warm","was","wash","Washington","wasn't","watch","water","waves","way","we","wear","weather","week","weight","we'll","well","went","were","west","western","what","wheels","when","where","whether","which","while","white","who","whole","whose","why","wide","wife","wild","will","win","wind","window","wings","winter","wire","wish","with","within","without","woman","women","wonder","won't","wood","words","work","workers","world","would","wouldn't","write","written","wrong","wrote");
 var letter_x = new Array("?", "!", ";", "-", "*", ",");
 var letter_y = new Array("yard","years","yellow","yes","yet","you","young","your","you're","yourself");
+var letter_z = new Array("'TO MAKE A DADAIST POEM'", "'Take a newspaper.'", "'Take some scissors.'", "'Choose from this paper an article of the length you want to make your poem.'", "'Cut out the article.'", "'Next carefully cut out each of the words that makes up this article and put them all in a bag.'", "'Shake gently.'", "'Next take out each cutting one after the other.'", "'Copy conscientiously in the order in which they left the bag.'", "'Them poem will resemble you.'", "'And there you are – an infinitely original author of charming sensibility, even though unappreciated by the vulgar herd.'");
 
 var $cont = $('.read');
 $cont[0].scrollTop = $cont[0].scrollHeight;
@@ -117,12 +118,15 @@ $("textarea").keypress(function(event){
     if(event.keyCode == 121 || event.keyCode == 89) {
         $(".read").append("<p class='" + current_font + "'>" + letter_y[Math.floor(Math.random()*letter_y.length)] + " " + "</p>");
         }
-    if(event.keyCode == 20 || event.keyCode == 16 || event.keyCode == 46) {
-        $(".read").append("</br>");
+    if(event.keyCode == 122 || event.keyCode == 90) {
+        $(".read").append("<p class='" + current_font + "'>" + letter_z[Math.floor(Math.random()*letter_z.length)] + " " + "</p>");
+        }    
+    if(event.keyCode == 46) {
+        $(".read").append(". ");
         typing.pause();
         typingz.pause(); 
-        typingz.currentTime = 0;
-        typingz.play();
+        typing.currentTime = 0;
+        typing.play();
         }    
     if(event.keyCode == 13) {
         $(".read").append("</br>");
@@ -130,9 +134,25 @@ $("textarea").keypress(function(event){
         typingz.pause(); 
         typingz.currentTime = 0;
         typingz.play();
+        
+        var random_number = Math.floor(Math.random() * fonts.length);
+        current_font = fonts[random_number];
         }  
         
     $(".read").animate({ scrollTop: $(document).height() });
+    
+});
+
+$("textarea").keydown(function(){
+    if(event.keyCode == 20 || event.keyCode == 16) {
+        var typing = new Audio('type.wav');
+    var typingz = new Audio('typez.wav');
+    $(".read").append("</br>");
+        typing.pause();
+        typingz.pause(); 
+        typing.currentTime = 0;
+        typing.play();    
+    }
     
 });
 

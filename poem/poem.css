@@ -11,6 +11,11 @@ textarea {
     font-family: helvetica;
     font-size: 10pt;
     border: none;
+    outline: none;
+}
+
+textarea:focus { 
+    outline: none; 
 }
 
 p {
@@ -28,7 +33,7 @@ p {
 
 h1 {
     position: fixed;
-    font-style: normal;
+    font-weight: normal;
 }
 
 .title {
