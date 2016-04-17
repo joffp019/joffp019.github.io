@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title> Brasilia Trip </title>
+        <style>
+         body {
+             background-color: white;
+             text-align: center;
+             margin: 0;
+             width: 100%;
+             height: 100%;
+         }
+        .square {
+            display: inline-block;
+            width: 98px;
+            height: 98px;
+            margin: 2px;
+        }
+        #location {
+            background-color: transparent;
+            position: fixed;
+            width: 1000px;
+            height: 500px;
+            font-family: Helvetica;
+            text-align: center;
+            font-size: 100px;
+            top: 50%;
+            left: 50%;
+            margin: -250px -500px;
+            z-index: 10;
+            /*opacity: 0;*/
+            pointer-events: none;
+        }
+        .close {
+            position: fixed;
+        }
+        </style>
+    </head>
+    
+    <body>
+        
+        
+        
+            <p id="location"> some location </p>
+            
+            
+        
+        <script>
+        
+            var content = ["Brasília é construída na linha do horizonte. – Brasília é artificial. Tão artificial como devia ter sido o mundo quando foi criado. Quando o mundo foi criado, foi preciso criar um homem especialmente para aquele mundo. Nós somos todos deformados pela adaptação à liberdade de Deus. Não sabemos como seríamos se tivéssemos sido criados em primeiro lugar, e depois o mundo deformado às nossas necessidades. ", 
+            "Brasília ainda não tem o homem de Brasília. – Se eu dissesse que Brasília é bonita, veriam imediatamente que gostei da cidade. Mas de digo que Brasília é a imagem de minha insônia, vêem nisso uma acusação; mas a minha insônia não é bonita nem feia – minha insônia sou eu, é vivida, é o meu espanto. Os dois arquitetos não pensaram em construir beleza, seria fácil; eles ergueram o espanto deles, e deixaram o espanto inexplicado. A criação não é uma compreensão, é um novo mistério. – Quando morri,um dia abri os olhos e era Brasília. Eu estava sozinha no mundo. Havia um táxi parado. Sem chofer. – Lucio Costa e Oscar Niemeyer, dois homens solitários. – ", 
+            "Olho Brasília como olho Roma: Brasília começou com uma simplificação final de ruínas. A hera ainda não cresceu. – Além do vento há uma outra coisa que sopra. Só se reconhece na crispação sobrenatural do lago. – Em qualquer lugar onde se está de pé, criança pode cair, e para fora do mundo. Brasília fica à beira. – Se eu morasse aqui, deixaria meus cabelos crescerem até o chão. – Brasília é de um passado esplendoroso que já não existe mais. Há milênios desapareceu esse tipo de civilização. "
+            "No seculo IV a.C. era habitada por homens e mulheres louros e altíssimos, que não eram americanos nem suecos, e que faiscavam ao sol. Eram todos cegos. É por isso que em Brasília não há onde esbarrar. Os brasiliários vestiam-se de ouro branco. A raça se extinguiu porque nasciam poucos filhos. Quanto mais belos os brasiliários, mais cegos e mais puros e mais faiscantes, e menos filhos. Não havia em nome de que morrer."];
+
+            var selected_tile = Math.floor(Math.random() * 8) + 1;
+            
+            window.onclick = function(img) {
+                    console.log("wow!");
+                    selected_tile = Math.floor(Math.random() * 8) + 1;
+                    event.target.src = get_image_from_tile(selected_tile);
+                    // increment();
+                };    
+            
+            var get_image_from_tile = function(tile) {
+                counting++;
+                // increment();
+                return 'bsbtiles-' + tile + '.png';
+                
+            };
+        
+            
+            for (var i = 0; i < 144; i ++) {
+            
+                var tile = Math.floor(Math.random() * 9) + 1;
+                
+                var degrees = 90 * Math.floor(Math.random() * 4);
+                    
+                var img = document.createElement('img');
+                img.className = 'square';
+                img.setAttribute('data-tile', tile);
+                img.src = get_image_from_tile(tile);
+                img.style.opacity = 0;
+                
+                img.style.transform = "rotate(" + degrees + "deg)";
+                document.body.appendChild(img);
+                    
+                    // onmousedown, onmousemove, onmouseup, onmouseenter, onmouseleave, 
+                    
+                var counting = 0;    
+                    
+                img.onmouseenter = function(event){
+                        event.target.style.opacity = 1;
+                        event.target.src = get_image_from_tile(selected_tile);
+                        counting++;
+                        increment();
+                        
+                    };
+                    
+                }
+            
+            var increment = function(){
+                counting++;
+                if (counting < 10) {
+                    console.log("it fucking worked!!!");
+                    document.getElementById("location").style.visibility = "hidden"; 
+                } else {
+                    document.getElementById("location").style.visibility = "visible"; 
+                    document.getElementById("location").innerHTML = content[tile];
+                }
+                
+                
+                
+            };
+        
+            
+        </script>
+        
+    </body>
+</html>

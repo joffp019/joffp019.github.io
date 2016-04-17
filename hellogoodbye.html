@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title> Events </title>
+        <style>
+            .egg {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                line-height: 100px;
+                border-radius: 100%;
+                border: 8px inset grey;
+                margin: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            // var match = function(her, him) {
+            //     var them = her + " & " + him;
+            //     return them;
+            // };
+            
+            // var couples = [
+            //     match("bethany", "john"),
+            //     match("paula", "trump"),
+            //     match("amy", "adam")
+            // ];
+
+            var egg = function(name) {
+                
+                var cracks = 0;
+                
+                document.body.innerHTML += '<div class="egg" id = "' + name + '">' + name + '</div>';
+                
+                return {
+                    tap: function () {
+                        cracks += 1;
+                        console.log("~CRACK~", cracks, name);
+                        if (cracks == 5) {
+                            console.log("the egg hatched.");
+                            window.onclick = chick().click;
+                        }
+                    },
+                    name: name
+                };
+            };
+        
+            var chick = function() {
+                
+                var chirps = 0;
+                
+                return {
+                    click: function(){
+                        chirps += 1;
+                        console.error("Chirp! (*-*)", chirps);
+                    }
+                   
+                };
+            };
+
+            var carton = [];
+
+            var egg_total = 100;
+            
+            for (var i = 0; i < egg_total; i++) {
+                carton.push(egg('egg-no-'+i));
+            }
+
+            carton.forEach(function(egg) {
+                document.getElementById(egg.name).addEventListener('click', egg.tap);
+            });
+        
+            var egg1 = document.getElementById('one');
+            egg1.addEventListener("click", carton[0].tap);
+
+        </script>
+    </body>
+</html>

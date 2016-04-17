@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Functions </title>
+        
+        
+        
+    </head>
+    <body>
+        Hello
+        
+        <!--our library-->
+        
+        <script src="word_printer.js"></script>
+        <script src="word_changer.js"></script>
+        
+        <!--Our program-->
+        
+        <script>
+        
+            var words = ["historic", "necessary", "consistent", "crat"]; 
+            var prefixes = ["pre", "un", "in", "bureau"];
+            var combos = [];
+            
+            words.forEach(function(value, index) {
+                console.log(value);
+                combos.push(word_changer.add_prefix(prefixes[index], value));
+            });
+            
+            combos.forEach(function(combo) {
+                word_printer.insert("<li>" + combo + "</li>");
+            });
+            
+            console.log(combinations);
+    
+            word_printer.print("Everything is working!");
+        </script>
+    </body>
+</html>
