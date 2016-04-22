@@ -16,7 +16,7 @@ var image_set = function () {
   var imgs = document.getElementsByTagName("img");
   for(var i = 0; i < imgs.length; i++) {
     var img = imgs[i];
-    var random = Math.floor(Math.random() * 15 + 1);
+    var random = Math.floor(Math.random() * 16 + 1);
     // img.src = image_dir + "/image_" + random + ".jpg";
     img.src = "//joffp019.github.io/" + image_dir + "/image_" + random + ".jpg";
   }
